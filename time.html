@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>World Clock</title>
+  <link rel="stylesheet" href="time.css">
+</head>
+
+<body>
+  <h1>World Clock</h1>
+  <div class="clock">
+    <p class="time"></p>
+    <form>
+      <label for="timezone">Select a time zone:</label>
+      <select name="timezone" id="timezone">
+        <option value="America/New_York">New York</option>
+        <option value="Europe/London">London</option>
+        <option value="Europe/Berlin">Berlin</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="Australia/Sydney">Sydney</option>
+      </select>
+    </form>
+    <div class="format">
+      <button id="12h">12-hour format</button>
+      <button id="24h">24-hour format</button>
+    </div>
+  </div>
+  <div class="pomodoro">
+    <h2>Pomodoro Timer</h2>
+    <div class="timer">
+      <div>
+        <label for="work-time">Work Time:</label>
+        <input type="number" name="work-time" id="work-time" value="25" min="1" max="60"> minutes
+      </div>
+      <div>
+        <label for="break-time">Break Time:</label>
+        <input type="number" name="break-time" id="break-time" value="5" min="1" max="60"> minutes
+      </div>
+      <div class="display">
+        <p class="time"></p>
+        <p class="phase"></p>
+      </div>
+      <div class="controls">
+        <button id="start">Start</button>
+        <button id="resume">Resume</button>
+        <button id="stop">Stop</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="time.js"></script>
+  <script src="pomodoro.js"></script>
+</body>
+
+</html>
